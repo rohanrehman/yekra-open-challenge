@@ -1,7 +1,7 @@
 #Welcome to Yekra's Open Challenge Task
 
 #####Environment Setup
-You will need to have the requried development dependencies installed
+You will need to have the required development dependencies installed
 - Node (0.12.2)
 - NPM
 - Bower
@@ -21,7 +21,7 @@ https://material.angularjs.org/latest/#/
 #####Navigation Bar
 - Turn off the slider line on the navigation bar (filterbar component)
 - Make Label 3 navigate to "about"
-- create the about page as a component staying as consitent with the other components as possible
+- Create the about page as a component staying as consistent with the other components as possible
 
 #####Poster Grid
 - On mouse over have a tile fade to 20% opacity and back to normal opacity on mouse out
