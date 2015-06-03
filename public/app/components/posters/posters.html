@@ -1,0 +1,47 @@
+<md-grid-list
+              md-cols-sm="1"
+              md-row-height-sm="1:1"
+
+              md-cols-gt-sm="5"
+              md-row-height-gt-sm="5:5"
+
+
+              md-cols-gt-md="5"
+              md-row-height-md="5:5"
+
+
+              md-row-height-gt-md="1:1"
+              md-row-height="5:5"
+
+              md-gutter-sm="20px"
+              md-gutter-gt-sm="8px"
+
+              md-gutter-gt-md="20px"
+
+              md-gutter-gt-lg="10px"
+        >
+
+
+    <md-grid-tile ng-repeat= "tile in posters.tiles"
+                  md-rowspan= "{{tile.span.row}}"
+                  md-colspan= "{{tile.span.col}}"
+                  ng-class= "tile.background"
+                  ng-click= "posters.mouseHndlr($event,tile)"
+                  ng-mouseover= "posters.mouseHndlr($event,tile)"
+                  ng-mouseout= "posters.mouseHndlr($event,tile)"
+                  ng-mouseup= "posters.mouseHndlr($event,tile)"
+                  style="outline: none;
+                  cursor: pointer;
+                  background: grey;
+                  "
+                  class="animate-repeat"
+            >
+        <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer>
+    </md-grid-tile>
+
+</md-grid-list>
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+
+$hero-height:300px;
+
+.hero{
+
+  height: $hero-height;
+  background-color:rgba(38, 39, 37, 0.83);
+  z-index:0;
+  position: relative;
+  width: 100%;
+}

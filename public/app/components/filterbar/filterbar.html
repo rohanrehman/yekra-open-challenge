@@ -1,0 +1,15 @@
+<div ng-controller="FilterbarController as ctrl"  class="sample row" style="z-index:20; position:relative; width:100%;">
+
+</div>
+
+<md-tabs class="md-primary" md-selected="ctrl.selectedIndex" >
+    <md-tab id="tab1" md-on-select="ctrl.tabClick(0)" ng-link="home" href="/home">
+        <md-tab-label>HOME</md-tab-label>
+    </md-tab>
+    <md-tab id="tab2" md-on-select="ctrl.tabClick(1)">
+        <md-tab-label>CONTACT</md-tab-label>
+    </md-tab>
+    <md-tab id="tab3" md-on-select="ctrl.tabClick(2)">
+        <md-tab-label>Label 3</md-tab-label>
+    </md-tab>
+</md-tabs>

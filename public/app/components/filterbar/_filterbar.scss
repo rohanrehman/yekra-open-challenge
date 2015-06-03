@@ -1,0 +1,25 @@
+
+$filterbar_background:lightgrey;
+
+md-tabs{
+  max-height:48px;
+  md-ink-bar{
+    height: 3px;
+  }
+  md-tabs-wrapper {
+    background-color: $filterbar_background;
+    height: 80px;
+  }
+  md-tab-item {
+    color: black;
+  }
+
+
+}
+
+
+md-tabs.md-default-theme md-ink-bar {
+  color: $yekra_teal!important;
+  background: $yekra_teal!important;
+}
+

@@ -1,0 +1,63 @@
+$yekra_teal: rgb(79, 223, 211);
+$futura: 'Futura', sans-serif;
+
+@import "compass/css3/border-radius";
+@import "compass/css3/animation";
+@import "compass/css3/filter";
+
+
+
+@import "../../../app/components/filterbar/filterbar";
+@import "../../../app/components/hero/hero";
+@import "../../../app/components/posters/posters";
+
+body{
+  background-color: rgba(0,0,0,0);
+  font-family: $futura;
+}
+
+md-list .md-button {
+  color: inherit;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+}
+
+
+.animate-enter {
+  -webkit-transition: 1s linear all; /* Chrome */
+  transition: 1s linear all;
+  opacity: 0;
+}
+
+
+
+@include keyframes(move-up) {
+    from { top: 0px;}
+    to { top: -300px;}
+}
+@include keyframes(move-dwn) {
+    from { top: -300px;}
+    to { top: 0px;}
+}
+
+@include keyframes(fade-in) {
+    from { opacity: 0;}
+    to { opacity: .3;}
+}
+
+@include keyframes(fade-out) {
+    from { opacity: .3;}
+    to { opacity: 0;}
+}
+
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('pacifico.eot');
+  src: url('pacifico.eot?#iefix') format('embedded-opentype'),
+  url('pacifico.woff') format('woff'),
+  url('pacifico.ttf') format('truetype'),
+  url('pacifico.svg#Pacifico') format('svg');
+}
+
