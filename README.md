@@ -12,6 +12,7 @@ You will need to have the requried development dependencies installed
 Angular 1.4 / Angular Material Design
 https://material.angularjs.org/latest/#/
 
+####### run npm i and bower i to install dev dependencies
 ####### run Gulp to start the project
 
 
