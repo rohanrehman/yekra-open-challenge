@@ -5,7 +5,7 @@ md-tabs md-ink-bar {
   height: 3px;
 }
 md-tabs md-tabs-wrapper {
-  background-color: lightgray;
+  background-color: lightgrey;
   height: 80px;
 }
 md-tabs md-tab-item {
@@ -59,11 +59,24 @@ md-tabs.md-default-theme md-ink-bar {
   background: grey;
 }
 
-.md-grid-tile md-icon {
+md-grid-tile {
+  -moz-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+md-grid-tile:hover {
+  opacity: .2;
+}
+md-grid-tile:focus {
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
+md-grid-tile md-icon {
   padding-bottom: 32px;
 }
-
-.md-grid-tile md-grid-tile-footer {
+md-grid-tile md-grid-tile-footer {
   background: rgba(0, 0, 0, 0.68);
   height: 24px;
 }
@@ -83,7 +96,6 @@ md-tabs.md-default-theme md-ink-bar {
   from {
     filter: blur(0px);
   }
-
   to {
     filter: blur(8px);
   }
@@ -93,7 +105,6 @@ md-tabs.md-default-theme md-ink-bar {
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
-
   to {
     -webkit-filter: blur(8px);
     filter: blur(8px);
@@ -104,7 +115,6 @@ md-tabs.md-default-theme md-ink-bar {
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
-
   to {
     -webkit-filter: blur(8px);
     filter: blur(8px);
@@ -139,7 +149,6 @@ md-list .md-button {
   from {
     top: 0px;
   }
-
   to {
     top: -300px;
   }
@@ -148,7 +157,6 @@ md-list .md-button {
   from {
     top: 0px;
   }
-
   to {
     top: -300px;
   }
@@ -157,7 +165,6 @@ md-list .md-button {
   from {
     top: 0px;
   }
-
   to {
     top: -300px;
   }
@@ -166,7 +173,6 @@ md-list .md-button {
   from {
     top: -300px;
   }
-
   to {
     top: 0px;
   }
@@ -175,7 +181,6 @@ md-list .md-button {
   from {
     top: -300px;
   }
-
   to {
     top: 0px;
   }
@@ -184,7 +189,6 @@ md-list .md-button {
   from {
     top: -300px;
   }
-
   to {
     top: 0px;
   }
@@ -193,7 +197,6 @@ md-list .md-button {
   from {
     opacity: 0;
   }
-
   to {
     opacity: .3;
   }
@@ -202,7 +205,6 @@ md-list .md-button {
   from {
     opacity: 0;
   }
-
   to {
     opacity: .3;
   }
@@ -211,7 +213,6 @@ md-list .md-button {
   from {
     opacity: 0;
   }
-
   to {
     opacity: .3;
   }
@@ -220,7 +221,6 @@ md-list .md-button {
   from {
     opacity: .3;
   }
-
   to {
     opacity: 0;
   }
@@ -229,7 +229,6 @@ md-list .md-button {
   from {
     opacity: .3;
   }
-
   to {
     opacity: 0;
   }
@@ -238,7 +237,6 @@ md-list .md-button {
   from {
     opacity: .3;
   }
-
   to {
     opacity: 0;
   }
@@ -248,5 +246,3 @@ md-list .md-button {
   src: url("pacifico.eot");
   src: url("pacifico.eot?#iefix") format("embedded-opentype"), url("pacifico.woff") format("woff"), url("pacifico.ttf") format("truetype"), url("pacifico.svg#Pacifico") format("svg");
 }
-
-/*# sourceMappingURL=app.css.map */

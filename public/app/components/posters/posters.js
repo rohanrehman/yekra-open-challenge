@@ -31,20 +31,22 @@
 
         function buildGridModel(tileTmpl) {
             console.log('BUILDING');
+
             var it, results = [];
-            for (var j = 0; j < 20; j++) {
-                it = angular.extend({}, tileTmpl);
-                it.id = j;
-               // it.icon = it.icon + (j + 1);
-                it.title = it.title + (j + 1);
-                it.span = {row: "1", col: "1"};
-                it.background = "white";
-                it.span.row = it.span.col = 1;
+            self.data.then(function(response){
+                for (var j = 0; j < 20; j++) {
+                    it = angular.extend({}, tileTmpl);
+                    it.id = j;
+                   // it.icon = it.icon + (j + 1);
+                    it.title = response.data.products[j].title;
+                    it.span = {row: "1", col: "1"};
+                    it.background = "white";
+                    it.span.row = it.span.col = 1;
 
+                    results.push(it);
+                }
+            });
 
-                results.push(it);
-
-            }
             return results;
         }
 
@@ -57,6 +59,7 @@
         switch($event.type) {
             case "click":
                 console.log(card);
+
                 break;
             default:
 
