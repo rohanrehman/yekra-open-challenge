@@ -52,19 +52,22 @@ angular.module("app", [
         $router.config([
             {
                 path: '/', components: {
-                hero: 'hero',
-                content: 'posters'
-            }, as: '/'
-            }
-            ,
+                    hero: 'hero',
+                    content: 'posters'
+                }, as: '/'
+            },
             {
                 path: '/contact', components: {
-                hero: 'hero',
-                content: 'posters'
-            }, as: 'contact'
-            }
-            ,
-
+                    hero: 'hero',
+                    content: 'posters'
+                }, as: 'contact'
+            },
+            {
+                path: '/about', components: {
+                    hero: 'hero',
+                    content: 'about'
+                }, as: 'about'
+            },
         ]);
 
     }

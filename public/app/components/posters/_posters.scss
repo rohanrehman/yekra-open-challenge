@@ -1,4 +1,6 @@
 @import "compass/css3/filter";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
 
 
 .posters{
@@ -36,11 +38,22 @@ md-grid-list{
 }
 
 
-.md-grid-tile md-icon {
-  padding-bottom: 32px; }
-.md-grid-tile md-grid-tile-footer {
-  background: rgba(0, 0, 0, 0.68);
-  height: 24px; }
+md-grid-tile {
+  @include transition(opacity 250ms);
+  &:hover {
+    opacity: .2;
+  }
+  &:focus {
+    @include box-shadow(0 0 10px black);
+  }
+  md-icon {
+    padding-bottom: 32px;
+  }
+  md-grid-tile-footer {
+    background: rgba(0, 0, 0, 0.68);
+    height: 24px;
+  }
+}
 .md-grid-tile-footer figcaption {
   width: 100%; }
 .md-grid-tile-footer figcaption h3 {
