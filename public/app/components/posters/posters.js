@@ -11,7 +11,7 @@
 
         function loadAllFilms() {
             var allPosters = PostersService.getFilms().then(function (response) {
-                return response
+                return response;
             });
             return allPosters;
         }
@@ -61,6 +61,6 @@
             default:
 
         }
-    }
+    };
 
 })();
